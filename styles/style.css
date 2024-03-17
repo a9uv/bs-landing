@@ -1,5 +1,8 @@
 
-
+:root {
+    --main-blue: hsl(202, 99%, 42%);
+    --test-blue: #3C8FED;
+}
 /* Reset CSS */
 * {
     margin: 0;
@@ -182,11 +185,10 @@ footer {
 }
 
 .heading {
-    font-size: 28px;
+    font-size: 32px;
 }
 .blue-heading{
-    font-size: 28px;
-    color: #0189d6;
+    color: var(--main-blue);
 }
 
 .heading-div{
@@ -199,37 +201,70 @@ footer {
     text-align: center;
 }
 
-.left-hero span{
-    color: #0189d6;
+.left-hero .blue-p{
+    color: var(--main-blue);
     font-weight: 600;
 }
 
 .hero-btn{
     color: white;
-    background-color: #0189d6;
-    font-size: 12px;
-    padding: 6px 48px;
-    border-radius: 15px;
+
+    font-size: 20px;
+    padding: 10px 72px;
+    border-radius: 50px;
     border: none;
-    margin-top: 1rem;
+    margin-top: 2cqmax; 
+    letter-spacing: .5px;
+}
+
+.pushable {
+    background: hsl(202, 99%, 30%);
+    border-radius: 50px;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    outline-offset: 4px;
+    transition: .3s;
+ 
+}
+
+.front {
+    display: block;
+    padding: 12px 42px;
+    border-radius: 50px;
+    font-size: 1.25rem;
+    background: hsl(202, 99%, 42%);
+    color: white;
+    transform: translateY(-6px);
+}
+
+.pushable:active .front {
+    transform: translateY(-2px);
+}
+
+.pushable:hover{
+    transition: .3s;
+    -webkit-box-shadow: -1px 0px 35px 3px rgba(233, 196, 106, 1);
+    -moz-box-shadow: -1px 0px 35px 3px rgba(233, 196, 106, 1);
+    box-shadow: -1px 0px 35px 3px rgba(233, 196, 106, 1);
 }
 
 .hero-list{
     list-style: none;
-    margin-top: 1.5rem;
+    margin-top: 2rem;
     text-align: center;
     margin-bottom: 1.5rem;
     
+    
 }
 .hero-list li{
-    color: #0189d6;
-    font-weight: 600;
-    margin-bottom: 1rem;
+    color: var(--main-blue);
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 24px;
+    margin-bottom: 2rem;
+
 
 }
-
-
-
-
 
 
