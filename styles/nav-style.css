@@ -1,34 +1,35 @@
 nav {
   background-color: #f2f2f2;
   display: flex;
-  justify-content: flex-end;
+  justify-content: right;
+  align-items: center;
   color: #0189d6;
-  padding-bottom: 12px;
-  height: 40px;
+  min-height: 3.5rem;
   
 }
 
 .nav-items {
   display: flex;
   list-style: none;
-  margin: 0;
-  padding: 0;
+  align-items: center;
 color: #0189d6;
-margin-right: 1.5rem;
+margin-right: 10rem;
+margin-top: .5rem;
+
+
 }
 
 .nav-item {
-  margin-left: 10px;
      color: #0189d6;
-   margin-top: 20px;
+     margin-right: .75rem;
+     margin-left: .75rem;
+
 }
 
 .nav-item a {
   text-decoration: none;
-  /* color: #333; */
-  padding: 10px;
-     color: #0189d6;
-     font-weight: 600;
+  color: #0189d6;
+  font-weight: 600;
 }
 
 .nav-item a:hover {
@@ -38,7 +39,7 @@ margin-right: 1.5rem;
 
 .dropdown-toggle {
   cursor: pointer;
-    color: #0189d6;
+  color: #0189d6;
 }
 
 .dropdown-menu {
@@ -50,20 +51,21 @@ margin-right: 1.5rem;
   list-style: none;
   padding: 0px 6px;
   margin: 0;
-     color: #0189d6;
-       font-size: 14px;
+  color: #0189d6;
+    font-size: 14px;
+    border-left: hsl(202, 99%, 42%) solid 2px;
 }
 
 .dropdown-menu li {
+  align-items: center;
+  justify-content: center;
   margin: 1rem;
   font-size: 16px;
-  border-bottom: solid hsl(202, 99%, 42%) 1px;
+  border-bottom: solid black 1px;
 }
 
 .dropdown-menu a {
   text-decoration: none;
-  color: #333;
-  padding: 10px;
   font-size: 12px;
 }
 
@@ -77,23 +79,25 @@ margin-right: 1.5rem;
 
 .nav-btn{
   color: hsl(202, 99%, 42%);
-  padding: 2px 4px;
-  margin-top: 15px;
-  margin-left: 1.4rem;
-  margin-right: 6rem;
   background-color: #f2f2f2;
   border-radius: 5px;
     padding: 10px 12px;
   border: solid 1px hsl(202, 99%, 42%);
   font-weight: 600;
   font-size: 16px;
+  margin-left: 1rem;
+  margin-top: 3px;
   /* transition: .1s; */
+    /* margin-top: 15px;
+      margin-left: 1.4rem;
+      margin-right: 6rem; */
 }
 
 .nav-btn:hover{
   transition: .1s;
   background-color:hsl(202, 99%, 42%) ;
   color: white;
+  cursor: pointer;
 }
 
 

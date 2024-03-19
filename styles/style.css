@@ -13,7 +13,6 @@
 /* Global Styles */
 body {
     font-family: "Poppins", sans-serif;
-    /* line-height: 1.6; */
     background-color: #f4f4f4;
     color: #333;
 }
@@ -142,17 +141,19 @@ footer {
     display: flex;
     flex-direction: column;
     padding-top: 4rem;
+    margin-left: 5rem;
 }
 
 .right-hero{
     align-items: center;
     display: flex;
     flex-direction: row;
+    margin-right: 5rem;
 }
 #worker{
     /* position: relative; */
     /* margin-top: 6rem; */
-    max-width: 36vw;
+    max-width: 40vw;
     justify-content: center;
     align-items: center;
 
@@ -161,7 +162,7 @@ footer {
 
 #upper-circle{
    position: relative;
-    max-width: 2.5rem;
+    max-width: 4vw;
     bottom: 14rem;
     right: 3rem;
     /* left: 16rem; */
@@ -172,7 +173,7 @@ footer {
 }
 
 #lower-circle{
-    max-width: 4rem;
+    max-width: 6vw;
     position: relative;
     top: 16rem;
     left: 5rem;
@@ -263,8 +264,6 @@ footer {
     letter-spacing: 1px;
     font-size: 24px;
     margin-bottom: 2rem;
-
-
 }
 
 
