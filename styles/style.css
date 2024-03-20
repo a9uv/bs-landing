@@ -267,3 +267,56 @@ footer {
 }
 
 
+.hero-list li:nth-child(even){
+    color: #003787;
+}
+
+.dark-blue-heading{
+    color: #003787;
+}
+
+
+.features-container{
+    display: flex;
+    
+}
+
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 80%;
+    /* Adjust width as needed */
+}
+
+.card {
+    width: calc(20% - 20px);
+    /* Adjust based on number of cards per row */
+    margin: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    padding: 15px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    /* Adjust image height as needed */
+    object-fit: cover;
+    /* Scales image to fit within container */
+}
+
+.card h3 {
+    margin: 10px 0;
+    font-weight: bold;
+    color: #003787;
+}
+
+.card p {
+    font-size: 16px;
+    color: #333;
+}
