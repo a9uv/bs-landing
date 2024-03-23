@@ -5,16 +5,17 @@ nav {
   align-items: center;
   color: #0189d6;
   min-height: 3.5rem;
-  
+  position: sticky;
+  top: 0;
 }
 
 .nav-items {
   display: flex;
   list-style: none;
   align-items: center;
-color: #0189d6;
-margin-right: 10rem;
-margin-top: .5rem;
+  color: #0189d6;
+  margin-right: 10rem;
+  margin-top: .5rem;
 
 
 }
@@ -23,7 +24,6 @@ margin-top: .5rem;
   color: #0189d6;
   /* margin-right: .75rem;
   margin-left: .75rem; */
-
 }
 
 .nav-item a {
@@ -84,20 +84,17 @@ margin-top: .5rem;
   background-color: #f2f2f2;
   border-radius: 5px;
   padding: 10px 10px;
-  border: solid 1px #003787;
+  border: solid 2px #003787;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 18px;
   margin-top: 2px;
-  /* transition: .1s; */
-    /* margin-top: 15px;
-      margin-left: 1.4rem;
-      margin-right: 6rem; */
 }
 
 .nav-btn a {
   text-decoration: none;
-  color: #003787;
+  color: hsl(202, 99%, 42%);
   padding: 12px 14px;
+  font-size: 18px;
 
 }
 
@@ -115,3 +112,7 @@ margin-top: .5rem;
 
 
 
+nav img{
+  max-width: 20px;
+  margin-right: 20vw;
+}

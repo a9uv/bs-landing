@@ -1,4 +1,12 @@
 
+
+/** 
+
+
+Data Center Picture on theSolutions, 
+IT Financing Images
+
+**/
 :root {
     --main-blue: hsl(202, 99%, 42%);
     --test-blue: #3C8FED;
@@ -41,7 +49,10 @@ footer {
 .features {
     background-color: #fff;
     padding: 50px 0;
+    padding-bottom: 2rem;
     text-align: center;
+
+
 }
 
 .features h2 {
@@ -97,7 +108,7 @@ footer {
 } */
 
  .hero {
-    height: 80vh;
+    height: 85vh;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     /* background: url(./images/hero-img.png) no-repeat;
@@ -173,10 +184,11 @@ footer {
 }
 
 #lower-circle{
-    max-width: 6vw;
+    max-width: 5vw;
     position: relative;
     top: 16rem;
-    left: 5rem;
+    left: 4rem;
+
    /* position: relative;
     
     bottom: 2rem;
@@ -276,10 +288,13 @@ footer {
 }
 
 
-.features-container{
-    display: flex;
-    
-}
+
+
+
+
+
+
+/** FEATURES **/
 
 
 .card-container {
@@ -320,3 +335,115 @@ footer {
     font-size: 16px;
     color: #333;
 }
+
+.features-btn {
+    color: hsl(202, 99%, 42%);
+    background-color: #003787;
+    border-radius: 5px;
+    padding: 1.3rem 2rem;
+    border: solid 2px hsl(202, 99%, 42%);
+    font-weight: 600;
+    font-size: 1rem;
+    margin-top: 2rem;
+    box-shadow: 6px 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.features-btn a {
+    text-decoration: none;
+    color: white;
+    /* color: hsl(202, 99%, 42%); */
+    padding: 12px 14px;
+    font-size: 1.5rem;
+
+}
+
+.features-btn:hover {
+    transition: .1s;
+    background-color: #003787;
+    color: white;
+    cursor: pointer;
+}
+
+.features-btn a:hover {
+    color: white;
+}
+
+.section {
+    /* display: flex; */
+    padding: 2rem 3.5rem;
+}
+
+
+/** LEASING **/
+.leasing {
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.lease-container{
+    max-width: 1200px;
+    justify-content: center;
+}
+
+.lease-cards {
+    display: flex;
+
+    /* margin: 0 auto; */
+    /* width: 80%; */
+}
+
+.lease-card {
+
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    min-width: 40vw;
+
+    padding: 15px;
+    text-align: center;
+        /* width: 100vw;
+            margin: 10px; */
+                /* min-height:40vh; */
+}
+
+.lease-heading{
+    justify-content: center;
+}
+
+.lease-heading-div{
+    justify-content: center;
+}
+.lease-card h3 {
+    margin: 10px 0;
+    font-weight: bold;
+    color: #003787;
+    
+}
+
+.lease-card p {
+    font-size: 16px;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+.about{
+    display: flex;
+    background-color: #f4f4f4;
+}
+
+.about h2{
+    margin-top: 1rem;
+}
+
+
+
+
