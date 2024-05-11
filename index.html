@@ -11,107 +11,117 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/@phosphor-icons/web"></script>
 </head>
 
+/**
+* The main HTML structure for the sky-landing page, including the navigation menu, hero section, features section, and
+leasing section.
+* This code represents the core structure and layout of the page, with various sections and components that provide the
+user experience.
+*/
+
 <body>
-  <nav>
-    <a href="index.html" class="logo-home"><img src="images/blueCircle.png" alt="logo" /></a>
-    <ul class="nav-items">
-      <li class="nav-item dropdown">
-        <a href="solutions.html" class="dropdown-toggle">SOLUTIONS </a>
-        <ul class="dropdown-menu">
-          <li><a href="solutions/leasing-finance.html">LEASING & EQUIPMENT FINANCE</a></li>
-          <li><a href="solutions/loans-and-credit.html">BANK LOANS & CREDIT FACILITIES</a></li>
-          <li><a href="solutions/project-finance.html">TAX EXEMPT & PROJECT FINANCE</a></li>
-          <li><a href="solutions/growth.html">EARLY STAGE GROWTH</a></li>
+    <nav>
+        <a href="index.html" class="logo-home"><img src="images/blueCircle.png" alt="logo" /></a>
+        <ul class="nav-items">
+            <li class="nav-item dropdown">
+                <a href="solutions.html" class="dropdown-toggle">SOLUTIONS </a>
+                <ul class="dropdown-menu">
+                    <li><a href="solutions/leasing-finance.html">LEASING & EQUIPMENT FINANCE</a></li>
+                    <li><a href="solutions/loans-and-credit.html">BANK LOANS & CREDIT FACILITIES</a></li>
+                    <li><a href="solutions/project-finance.html">TAX EXEMPT & PROJECT FINANCE</a></li>
+                    <li><a href="solutions/growth.html">EARLY STAGE GROWTH</a></li>
+                </ul>
+            </li>
+            <li class="nav-item"><a href="about.html">ABOUT US</a></li>
+            <li class="nav-btn-li">
+                <button class="nav-btn">
+                    <a href="book.html">BOOK NOW</a>
+                </button>
+            </li>
         </ul>
-      </li>
-      <li class="nav-item"><a href="about.html">ABOUT US</a></li>
-      <li class="nav-btn-li"> 
-        <button class="nav-btn">
-          <a href="book.html">BOOK NOW</a>
-        </button>
-      </li>
-    </ul>
-  </nav>
+    </nav>
     <section class="hero">
-      <div class="left-hero">
-        <div class="heading-div">
-            <h1 class="blue-heading heading poppins-regular">INNOVATIVE FINANCIAL SOLUTIONS</h1>
-  <h3 class="for-heading heading poppins-regular">FOR</h3>
-  <h1 class="blue-heading heading dark-blue-heading">FINANCIAL OFFICERS</h1>
+        <div class="left-hero">
+            <div class="heading-div">
+                <h1 class="blue-heading heading poppins-regular">INNOVATIVE FINANCIAL SOLUTIONS</h1>
+                <h3 class="for-heading heading poppins-regular">FOR</h3>
+                <h1 class="blue-heading heading dark-blue-heading">FINANCIAL OFFICERS</h1>
+            </div>
+
+            <p class="hero-paragraph">Unlock the power of a <span class="blue-p">FREE</span> CAPEX/OPEX consultation
+                <br />
+                for your business</p>
+
+            <button class="hero-btn poppins-bold pushable">
+                <span class="front">
+                    SCHEDULE A <br /> CONSULTATION NOW
+                </span>
+            </button>
+
+            <ul class="hero-list">
+                <li>LEASING & EQUIPMENT FINANCE</li>
+                <li>BANK LOANS & CREDIT FACILITIES</li>
+                <li>TAX EXEMPT & PROJECT FINANCE</li>
+                <li>EARLY STAGE GROWTH</li>
+            </ul>
+        </div>
+        <div class="right-hero">
+            <img src="images/blueCircle.png" id="lower-circle" />
+            <img src="images/circleWorker.png" id="worker" />
+            <img src="images/blueCircle.png" id="upper-circle" />
         </div>
 
-      <p class="hero-paragraph">Unlock the power of a <span class="blue-p">FREE</span> CAPEX/OPEX consultation <br/>
-for your business</p>
 
-        <button class="hero-btn poppins-bold pushable">
-          <span class="front">
-            SCHEDULE A <br /> CONSULTATION NOW
-          </span>
-        </button>
 
-        <ul class="hero-list">
-          <li>LEASING & EQUIPMENT FINANCE</li>
-          <li>BANK LOANS & CREDIT FACILITIES</li>
-          <li>TAX EXEMPT & PROJECT FINANCE</li>
-          <li>EARLY STAGE GROWTH</li>
-        </ul>
-      </div>
-      <div class="right-hero">
-        <img src="images/blueCircle.png" id="lower-circle" />
-        <img src="images/circleWorker.png" id="worker" />
-        <img src="images/blueCircle.png" id="upper-circle" />
-      </div>
-      
-    
-      
 
 
     </section>
 
 
- 
-  <section class="features">
-      <h2 class="heading dark-blue-heading">Our Solutions</h2>
-      <div class="card-container">
-        <div class="card">
-          <img src="image1.jpg" alt="Card 1 Image">
-          <h3>Leverage Funding Sources</h3>
-          <p>You get access to a international network of low cost funding sources</p>
+
+    <section class="features">
+        <h2 class="heading dark-blue-heading">Our Solutions</h2>
+        <div class="card-container">
+            <div class="card">
+                <i class="ph ph-bank feature-icon"></i>
+                <h3>Leverage Funding Sources</h3>
+                <p>You get access to a international network of low cost funding sources</p>
+            </div>
+            <div class="card">
+                <i class="ph ph-chart-scatter feature-icon"></i>
+                <h3>Develop Financing Solutions</h3>
+                <p>We work with you to craft a financing strategy thats uniquely best
+                    for your team
+                </p>
+            </div>
+            <div class="card">
+  
+                <i class="ph ph-graph feature-icon"></i>
+                <h3>Execute Strategies</h3>
+                <p>With a clear financing strategy, we execute the financing plan
+                    with your best interests in mind
+                </p>
+            </div>
+            <div class="card">
+                <i class="ph ph-hand-coins feature-icon"></i>
+                <h3>Deliver 20% Savings</h3>
+                <p>Our vast network of sources allow us to negotiate below market rates
+                    on your behalf (terms and conditions)
+                </p>
+            </div>
+            <div class="card">
+                <i class="ph ph-kanban feature-icon"></i>
+                <h3>Comprehensive Project Management</h3>
+                <p>You will receive expert project management for the entire lifecycle
+                    of your leasing contracts
+                </p>
+            </div>
         </div>
-        <div class="card">
-          <img src="image2.jpg" alt="Card 2 Image">
-          <h3>Develope Financing Solutions</h3>
-          <p>We work with you to craft a financing strategy thats uniquely best 
-            for your team
-          </p>
-        </div>
-        <div class="card">
-          <img src="image3.jpg" alt="Card 3 Image">
-          <h3>Execute Strategies</h3>
-          <p>With a clear financing strategy, we execute the financing plan
-            with your best interests in mind
-          </p>
-        </div>
-        <div class="card">
-          <img src="image4.jpg" alt="Card 4 Image">
-          <h3>Deliver 20% Savings</h3>
-          <p>Our vast network of sources allow us to negotiate below market rates 
-            on your behalf (terms and conditions)
-          </p>
-        </div>
-        <div class="card">
-          <img src="image5.jpg" alt="Card 5 Image">
-          <h3>Comprehensive Project Management</h3>
-          <p>You will receive expert project management for the entire lifecycle
-            of your leasing contracts
-          </p>
-        </div>
-      </div>
 
         <button class="features-btn">
-          <a href="book.html">BOOK NOW</a>
+            <a href="book.html">BOOK NOW</a>
         </button>
     </section>
 
@@ -119,20 +129,20 @@ for your business</p>
 
     <section class="leasing section">
         <div class="lease-heading-div">
-          <h2 class="lease-heading heading dark-blue-heading">Leasing & Equipment Finance</h2>
+            <h2 class="lease-heading heading dark-blue-heading">Leasing & Equipment Finance</h2>
         </div>
         <div class="lease-cards">
-          <div class="lease-card">
-            <h3>Leasing Business</h3>
-          </div>
-          <div class="lease-card">
-            <h3>Leasing Business</h3>
-          </div>
+            <div class="lease-card">
+                <h3>Leasing Business</h3>
+            </div>
+            <div class="lease-card">
+                <h3>Leasing Business</h3>
+            </div>
         </div>
-        
+
 
     </section>
-<!-- 
+    <!-- 
       <section class="about section">
         <div class="container">
           <h2 class="heading dark-blue-heading">About Us</h2>
@@ -161,12 +171,12 @@ for your business</p>
 
 
 
-    
-  <footer>
-    <div class="container">
-      <p>&copy; 2024 Wisconsin Equipment Financing</p>
-    </div>
-  </footer>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Wisconsin Equipment Financing</p>
+        </div>
+    </footer>
 </body>
 
 </html>
