@@ -87,6 +87,10 @@ footer {
     padding: 20px 0;
 }
 
+.feature-icon {
+    color: #003787;
+    font-size: 96px;
+}
 
 /* img {
     max-width: 24rem;
