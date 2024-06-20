@@ -132,6 +132,12 @@ user experience.
                 </div>
         
                 <div class="sub-section-cards">
+
+                    <div class="comp-img-container">
+                        <img class='comp-approach-img' src="./images/optimize.png">
+                    </div>
+
+
         
                     <div class="comp-approach-card">
                         <h3 class="comp-approach-card-h3">1) Optimize Capital Structure</h3>
@@ -157,9 +163,7 @@ user experience.
                             <a href="book.html">Schedule a Consultation</a>
                         </button>
                     </div>
-                    <div class="lease-img-container">
-                        <img class='comp-approach-img' src="./images/optimize.png">
-                    </div>
+
                 </div>
         
         
@@ -291,6 +295,40 @@ user experience.
     
     </section> -->
 
+    <section class="contact">
+        <div class="contact-container">
+            <form class="contact-form"  action="form-handler.php" method="post">
+                <h2 class="contact-h2">Get In Touch</h2>
+                <div class="contact-names">
+                                    <div class="form-group" id="firstname-container">
+                                        <label for="firstName" >First Name:</label>
+                                        <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
+                                    </div>
+                                    <div class="form-group" id="lastname-container">
+                                        <label for="lastName">Last Name:</label>
+                                        <input type="text" id="lastName" name="lastName" placeholder="Last Name" required>
+                                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Your message . . ." required></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="contact-btn"> <a href="send.html">
+Send Message
+                    </a></button>
+                </div>
+            </form>
+            <img src="./images/paper_plane.webp" class="contact-paper-plane"/>
+        </div>
+
+        
+    </section>
 
     <!-- <section class="cta section">
       <div class="container">
@@ -304,7 +342,7 @@ user experience.
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 Wisconsin Equipment Financing</p>
+            <p>Wisconsin Equipment Financing &copy; 2024 All Rights Reserved </p>
         </div>
     </footer>
 </body>
