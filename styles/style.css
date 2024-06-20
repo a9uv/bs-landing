@@ -194,88 +194,109 @@ background: linear-gradient(to right, #e9f7ff 0%, #f5fbff 23%, #f5fbff 23%, #fff
 }
 
 .left-hero .blue-p{
-    color: var(--main-blue);
+    color: #003787;
     font-weight: 600;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
+
 .hero-btn{
-    color: white;
-    font-size: 20px;
-    padding: 10px 72px;
+    background-color: hsl(202, 99%, 42%);
+    padding: 20px 72px;
     border-radius: 5px;
-    border: none;
-    margin-top: 2cqmax; 
-    letter-spacing: .5px;
-    border: none;
+    border: 1px solid #003787;
+    margin-top: 2rem; 
+    margin-bottom: 1.5rem;
     cursor: pointer;
+    font-weight: 600;
+    box-shadow: 5px 3px 10px 5px rgba(4, 180, 255, 0.3);
+
 }
 
-.pushable {
-    background: hsl(202, 99%, 30%);
-    border-radius: 5px;
-    border: none;
-    padding: 0;
-    cursor: pointer;
-    outline-offset: 2px;
-    transition: .3s;
- 
-}
-
-.front {
-    display: block;
-    padding: 12px 42px;
-    border-radius: 5px;
-    font-size: 1.25rem;
-    background: hsl(202, 99%, 42%);
+.hero-btn a {
+    text-decoration: none;
     color: white;
-    transform: translateY(-6px);
+    font-size: 1.5rem;
 }
 
-.pushable:active .front {
+.hero-btn:hover {
+    /* background-color: #fff; */
+    border: solid 2px #003787;
+}
+
+
+.hero-btn:active {
     transform: translateY(-2px);
 }
 
-.pushable a:hover{
-    color: #0056b3;
-}
-.pushable:hover{
-    transition: background-color .3s ease;
-    background-color: #003787;
-     /* -webkit-box-shadow: -1px 0px 35px 3px rgba(233, 196, 106, 1);
-    -moz-box-shadow: -1px 0px 35px 3px rgba(233, 196, 106, 1);
-    box-shadow: -1px 0px 35px 3px rgba(233, 196, 106, 1);  */
-    
-}
-
-.front:hover{
-
-    border: 2px solid #003787;
-        background-color: #fff;
-            color: #003787;
-}
 
 .hero-list{
     list-style: none;
     margin-top: 2rem;
-    text-align: center;
+    /* text-align: center; */
     margin-bottom: 1.5rem;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
-    
-    
 }
+
 .hero-list li{
+    background-color: white;
+    border: none;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+    padding: .8rem 2rem;
+    padding-right: 1rem;
     color: var(--main-blue);
     font-weight: 700;
     letter-spacing: 1px;
     font-size: 24px;
-    margin-bottom: 2rem;
+    /* margin-bottom: 2rem; */
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+
+}
+
+.hero-list li:hover{
+    transition: .1s;
+        border-radius: 5px;
+    border: 2px solid hsl(202, 99%, 42%);
+
+    
+box-shadow: 1px 1px 2px rgba(44, 123, 242, 0.9);
+}
+
+.hero-li-1{
+    border-top-left-radius:10px;
+     border-top-right-radius:10px;
+}
+
+.hero-li-4 {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+}
+
+.hero-li-2 a, .hero-li-4 a{
+    color: hsl(202, 99%, 42%);
+}
+
+.hero-li-1 a,
+.hero-li-3 a {
+    color: #003787;
 }
 
 
-.hero-list li:nth-child(even){
+.hero-list li a{
+    text-decoration: none;
+}
+.hero-icon{
+    /* padding-top: .3rem; */
+    position: relative;
+    right: 1rem;
+    width: 5rem;
     color: #003787;
+}
+
+
+.hero-list li a:nth-child(even){
+    color: hsl(202, 99%, 42%);
 }
 
 .dark-blue-heading{
@@ -484,7 +505,9 @@ background: linear-gradient(to right, #e9f7ff 0%, #f5fbff 23%, #f5fbff 23%, #fff
     margin-left: 2rem;
     /* margin: 0 auto; */
     margin-top: 2rem;
+   
 }
+
 
 .comp-approach-btn a {
     text-decoration: none;
@@ -498,11 +521,13 @@ background: linear-gradient(to right, #e9f7ff 0%, #f5fbff 23%, #f5fbff 23%, #fff
     transition: .1s;
     /* background-color: #fff; */
     border: solid 2px #003787;
+    transition: .2s;
 }
 
 .comp-approach-btn a:hover {
     background-color: #fff;
     color: #003787;
+    transition: .2s;
 }
 .comp-approach-btn:active {
     transform: translateY(-2px);
@@ -703,6 +728,11 @@ background: linear-gradient(to right, #e9f7ff 0%, #f5fbff 23%, #f5fbff 23%, #fff
 
 /* Global Styles */
 
+.contact {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
 .contact-container {
     max-width: 1200px;
     margin: 0 auto;
@@ -718,13 +748,18 @@ background: linear-gradient(to right, #e9f7ff 0%, #f5fbff 23%, #f5fbff 23%, #fff
 .form-group{
     margin-top: 1rem;
 }
+
+.form-group input{
+  
+}
 .contact-names{
     display: grid;
     grid-template-columns:repeat(2,1fr);
 }
 
 #lastName, #firstName{
-    width: calc(98%)
+    width: calc(98%);
+    border: none;
 }
 /* #lastname-container{
     margin: 0 3rem;
@@ -733,14 +768,14 @@ background: linear-gradient(to right, #e9f7ff 0%, #f5fbff 23%, #f5fbff 23%, #fff
 .contact-paper-plane{
     width: 35rem;
     height: 20rem;
-    margin-top: 3.5rem;
+    margin-top: 4rem;
     /* height: 8rem; */
 }
 .contact-h2 {
     font-size: 2em;
     margin-bottom: 20px;
-    color: #003787;
-    font-size: 3rem;
+    color: hsl(202, 99%, 42%);
+    font-size: 2.5rem;
 }
 
 .contact-group {
@@ -751,7 +786,7 @@ label {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
-    color: #003787;
+    color: hsl(202, 99%, 42%);
     font-size: 1.3rem;
 }
 
@@ -759,10 +794,11 @@ input[type="text"],
 input[type="email"],
 textarea {
     width: 100%;
-    padding: 10px;
+    padding: 1rem;
     border: 1px solid #ccc;
     border-radius: 10px;
     outline: none;
+    border: none;
 }
 
 textarea {
@@ -784,20 +820,6 @@ textarea {
     transition: .3s;
 }
 
-.comp-approach-btn {
-    justify-content: center;
-    background-color: #003787;
-    border-radius: 5px;
-    font-weight: 600;
-    font-size: 18px;
-    display: flex;
-    align-items: center;
-    position: relative;
-    margin-left: 2rem;
-    /* margin: 0 auto; */
-    margin-top: 2rem;
-}
-
 
 .contact-btn:active {
     transform: translateY(-2px);
@@ -812,38 +834,15 @@ textarea {
 
 .contact-btn:hover {
     transition: .1s;
-        border-radius: 5px;
-    border: solid 2px #003787;
+        border-radius: 15px;
 }
 
 .contact-btn a:hover {
-    background-color: #fff;
-    color: #003787;
-}
-
-
-
-
-.comp-approach-btn a {
-    text-decoration: none;
-    /* color: hsl(202, 99%, 42%); */
-    color: white;
-    font-size: 18px;
-    padding: 14px 16px;
-}
-
-.comp-approach-btn:hover {
     transition: .1s;
-
-    /* background-color: #fff; */
-    border: solid 2px #003787;
+    background-color: hsl(202, 99%, 42%);
+    border-radius: 15px;
 }
 
-.comp-approach-btn a:hover {
-    background-color: #fff;
-    color: #003787;
-}
 
-.comp-approach-btn:active {
-    transform: translateY(-2px);
-}
+
+
