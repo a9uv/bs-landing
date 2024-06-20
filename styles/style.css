@@ -23,8 +23,6 @@ body {
     font-family: "Poppins", sans-serif;
     background-color: #f4f4f4;
     color: #333;
-    perspective: 1px;
-    transform-style: preserve-3d;
 }
 
 .container {
@@ -103,16 +101,12 @@ footer {
     display: grid;
     grid-template-columns: repeat(2,1fr);
 background: linear-gradient(to right, #e9f7ff 0%, #f5fbff 23%, #f5fbff 23%, #ffffff 100%);
-    perspective: 1px;
-        transform-style: preserve-3d;
+
 
 
 
 } 
 
-.hero::before{
-    
-}
 
 
 
