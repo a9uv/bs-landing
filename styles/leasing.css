@@ -1,3 +1,7 @@
+.solution-nav{
+    background: white;
+}
+
 .leasing-hero {
     background-color: white;
     display: flex;
@@ -5,7 +9,7 @@
     align-items: center;
     padding-bottom: 4rem;
     min-height: 48rem;
-    background: linear-gradient(to right, #e9f7ff 0%, #f5fbff 23%, #f5fbff 23%, #ffffff 100%);
+    background: white;
 }
 
 .leasing-hero-container {
@@ -44,8 +48,8 @@
     left: 17rem;
     z-index: 2;
     margin-right: 2rem;
-    /* object-fit: cover; */
-    /* object-position: 75% 0; */
+    object-fit: cover;
+    object-position: 100% 0;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -106,16 +110,105 @@
     transform: translateY(-2px);
 }
 
+.leasing-summary{
+    background: white;
+}
+
 .leasing-summary-heading{
     color: #1B75BB;
+    text-align: center;
+    padding-top: 1rem;
 }
 .leasing-summary-p{
+        margin-left: 2rem;
             font-size: 16px;
             color: hsl(222, 8%, 32%);
             margin-top: 1rem;
 }
 
+.leasing-btn-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.leasing-summary-btn {
+    display: flex;
+    margin: auto 0;
+    justify-content: center;
+    background-color: #003787;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    /* margin-left: 2rem; */
+    /* margin: 0 auto; */
+    margin-top: 2rem;
+    border: none;
+    box-shadow: 5px 3px 10px 5px rgba(4, 180, 255, 0.3);
+}
+
+.leasing-summary-btn a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 14px 16px;
+    justify-content: initial;
+}
+
+.leasing-summary-btn:hover {
+    transition: .1s;
+    border: solid 2px #003787;
+    transition: .2s;
+}
+
+.leasing-summary-btn a:hover {
+    background-color: #fff;
+    color: #003787;
+    transition: .2s;
+}
+
+.leasing-summary-btn:active {
+    transform: translateY(-2px);
+}
+
+
+
+
+.leasing-tools {
+    background: white;
+    padding-top: 3rem;
+}
+
+.leasing-tools-heading {
+    color: #1B75BB;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.leasing-tools-p {
+    margin-left: 2rem;
+    font-size: 1.1rem;
+    color: hsl(222, 8%, 32%);
+    margin-top: 1rem;
+}
+
 .tools-grid{
+    padding-top: 1rem;
     display: grid;
     grid-template-columns: repeat(3,1fr);
+    padding-bottom: 3rem;
+}
+
+.tools-text{
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+}
+
+.check{
+    width: 1.2rem;
+    margin-right: .5rem;
 }
